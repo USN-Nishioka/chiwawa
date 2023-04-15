@@ -2,6 +2,11 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+  // GutHub Pages
+  router: {
+    base: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/chiwawa/' : ''
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'chiwawa',
