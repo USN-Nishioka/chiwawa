@@ -21,9 +21,9 @@
           <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="パスワードを入力してください">
         </div>
         <div class="mt-6 flex justify-center">
-          <nuxt-link class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit" to="/projects">
+          <router-link class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit" to="/projects">
             ログイン
-          </nuxt-link>
+          </router-link>
         </div>
       </form>
     </div>

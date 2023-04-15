@@ -16,7 +16,7 @@
           <tbody>
           <tr v-for="testCase in testCases" :key="testCase.id">
             <td class="border-t-2 border-gray-200 px-4 py-4">{{ testCase.id }}</td>
-            <td class="border-t-2 border-gray-200 px-4 py-4"><nuxt-link to="/case/99"><span class="text-blue-500">{{ testCase.title }}</span></nuxt-link></td>
+            <td class="border-t-2 border-gray-200 px-4 py-4"><router-link to="/case/99"><span class="text-blue-500">{{ testCase.title }}</span></router-link></td>
             <td class="border-t-2 border-gray-200 px-4 py-4">{{ testCase.latest_test.executed_at }} by {{ testCase.latest_test.executed_by }}</td>
             <td class="border-t-2 border-gray-200 px-4 py-4">{{ testCase.latest_test.result }}</td>
           </tr>
