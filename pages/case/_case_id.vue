@@ -137,7 +137,8 @@ export default {
         ]
       },
       showModal: false,
-      resultName: ''
+      resultName: '',
+      latestTestResult: ''
     }
   },
 
