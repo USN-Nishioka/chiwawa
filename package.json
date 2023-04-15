@@ -7,7 +7,10 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "deploy": "DEPLOY_ENV=GH_PAGES nuxt generate && gh-pages -d dist"
+    "output": "nuxt build && nuxt generate",
+    "push": "git add . && git commit -m 'fix' && git push origin main",
+    "origin": "npm run output && npm run push",
+    "publish": "DEPLOY_ENV=GH_PAGES nuxt generate && gh-pages -d dist"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",

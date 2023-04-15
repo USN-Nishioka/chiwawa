@@ -6,9 +6,9 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
         <div v-for="project in projects" :key="project.id">
           <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-            <router-link to="/project/99">
+            <nuxt-link to="/project/99">
               <img class="h-64 w-full object-cover object-center" :src="project.project_logo" alt="プロジェクトロゴ">
-            </router-link>
+            </nuxt-link>
             <div class="p-4">
               <h3 class="text-lg font-bold text-gray-900">{{ project.project_name }}</h3>
             </div>
